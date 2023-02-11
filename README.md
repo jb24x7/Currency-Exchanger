@@ -2,14 +2,10 @@
 
 #### (Brief Description of Application)
 
-#### By Zachary Cipolletta
+#### By James Provance
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
 * CSS
 * HTML
 * JavaScript
