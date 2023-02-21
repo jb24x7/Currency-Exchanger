@@ -18,8 +18,8 @@ export default class Exchange {
       const json2 = await response.json();
       if (!response.ok) {
         let errorMessage = `${response.status}. Reason:${response.statusText} ${json2['error-type']}.`;
-        if (jsonifiedResponse['extra-info']) {
-          errorMessage = errorMessage.concat(` ${jsonifiedResponse['extra-info']}`);
+        if (json2['extra-info']) {
+          errorMessage = errorMessage.concat(` ${json2['extra-info']}`);
         }
         throw new Error(errorMessage);
       }
