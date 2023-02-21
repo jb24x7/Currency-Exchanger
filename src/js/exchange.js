@@ -23,7 +23,7 @@ export default class Exchange {
         }
         throw new Error(errorMessage);
       }
-      return jsonifiedResponse;
+      return json2;
     } catch (error) {
       return error;
     }
