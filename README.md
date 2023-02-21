@@ -1,6 +1,6 @@
-# (Application Name)
+# Currency Exchanger
 
-#### (Brief Description of Application)
+#### Takes the user imput to convert the currency of the user's choice.
 
 #### By James Provance
 
@@ -9,35 +9,44 @@
 * CSS
 * HTML
 * JavaScript
-* Node.js
-* Jest
-* Webpack
-* npm
 
 ## Description
 
 ## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-* If using an API remember to add instructions for creating a .env file and adding it to your .gitignore + instructions for getting and setting up an API key
-* Include all steps for getting a key — from the link to sign up for an account to any steps to getting an API key to the name of the API key variables that should be added to the .env file. Including accurate instructions for getting and setting up an API key
 
 * Clone repository to your desktop
 * Navigate to the top level of the directory
 * Install all packages with $ npm install.
 * Build the project using webpack with $ npm run build
 * If you wish to lint JS files in the src folder, run $ npm run lint
-* All business logic should be tested and pass Jest using $ npm run test
 * Start a development server with $ npm run start
+* Navigate to https://www.exchangerate-api.com/, enter in your Email address to get a free API key
+* create a file named .env in the top level of the project directory.
+* In the .env file, add "API_KEY={YOUR API KEY}" where YOUR API KEY is the API key obtained from the website.
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No results printed to the page
 
 ## License
-MIT
+MIT License
+
+Copyright (c) 2023 James Provance
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
