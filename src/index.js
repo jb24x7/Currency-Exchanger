@@ -23,13 +23,29 @@ function printError(error) {
 }
 
 
+function exchange() {
+  const amount =   document.getElementById('number').value;
+  let from = getCurrency(0);
+  let to = getCurrency(1);
+  newAmount(amount, from, to);
+}
+
+
+function getCurrencies() {
+  genCurrencies();
+}
+
+function getCurrency(selection) {
+  let currency = document.getElementById(`currency${selection}`).value;
+  return currency;
+}
 
 
 
-
-
-
-
+window.onload = function () {
+  document.getElementById('button').addEventListener("click", exchange);
+  getCurrencies();
+};
 
 ///////////////////////////////////////
 

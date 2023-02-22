@@ -10,7 +10,6 @@
 * HTML
 * JavaScript
 
-## Description
 
 ## Setup/Installation Requirements
 

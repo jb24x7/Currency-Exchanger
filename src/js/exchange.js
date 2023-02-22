@@ -29,21 +29,4 @@ export default class Exchange {
       return error;
     }
   }
-  
-  static async latestValue() {
-    try {
-      const response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`);
-      const json3 = await response.json();
-      if (!response.ok) {
-        let errorMessage = `${response.status}. Reason:${response.statusText} ${json3['error-type']}.`;
-        if (json3['extra-info']) {
-          errorMessage = errorMessage.concat(` ${json3['extra-info']}`);
-        }
-        throw new Error(errorMessage);
-      }
-      return json3;
-    } catch (error) {
-      return error;
-    }
-  }
 }
