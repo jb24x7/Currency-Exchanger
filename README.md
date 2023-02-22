@@ -24,7 +24,7 @@
 
 ## Known Bugs
 
-* No results printed to the page
+* No known bugs
 
 ## License
 MIT License
