@@ -40,7 +40,9 @@ function getCurrency(selection) {
   return currency;
 }
 
-
+function showAmount(amount, currencyFrom, result, currencyTo) {
+  document.getElementById('text').innerText = `${amount} ${currencyFrom} is: ${Math.round(result).toFixed(2)} ${currencyTo}`;
+}
 
 window.onload = function () {
   document.getElementById('button').addEventListener("click", exchange);
