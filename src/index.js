@@ -12,10 +12,10 @@ function getDropdown(response, dropDown) {
 }
 
 function fillOptions(response) {
-  let from = document.getElementById('convertFrom');
-  let to = document.getElementById('convertTo');
-  getCurencies(response, from);
-  getCurencies(response, to);
+  let from = document.getElementById('currency0');
+  let to = document.getElementById('currency1');
+  getDropdown(response, from);
+  getDropdown(response, to);
 }
 
 function printError(error) {
